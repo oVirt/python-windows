@@ -1,12 +1,11 @@
 Name:		python-windows
-Version:	2.7.14
+Version:	2.7.17
 Release:	1%{?dist}
 Summary:	RPM wrapper for %{name}
 License:	Python
 Source:		https://www.python.org/ftp/python/%{version}/python-%{version}.msi
 URL:		https://www.python.org/
 BuildArch:	noarch
-Packager:	Lev Veyde <lveyde@redhat.com>
 
 %description
 A package wrapping %{name} to provide dependency features.
@@ -24,6 +23,9 @@ cp -v %{_builddir}/%{name}/* $DST
 %{_datadir}/%{name}
 
 %changelog
+* Fri Nov 22 2019 Sandro Bonazzola <sbonazzo@redhat.com> - 2.7.17-1
+- Rebased on Python 2.7.17
+
 * Tue Oct 10 2017 Sandro Bonazzola <sbonazzo@redhat.com> - 2.7.14-1
 - Rebased on Python 2.7.14
 
